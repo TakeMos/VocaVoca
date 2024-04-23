@@ -12,6 +12,7 @@ struct VocaVocaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: WordItem.self)
         }
     }
 }

@@ -15,6 +15,8 @@
 		3897C43C2BBB83FA00AF398B /* WordStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3897C43B2BBB83FA00AF398B /* WordStudyView.swift */; };
 		3897C43E2BBB840D00AF398B /* WordCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3897C43D2BBB840D00AF398B /* WordCopyView.swift */; };
 		3897C4402BBB924800AF398B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3897C43F2BBB924800AF398B /* HomeView.swift */; };
+		389A760B2BD7549A009BC6F0 /* SaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A760A2BD7549A009BC6F0 /* SaveModel.swift */; };
+		38E98A512BD6F29D00C8554C /* WordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E98A502BD6F29D00C8554C /* WordItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		3897C43B2BBB83FA00AF398B /* WordStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStudyView.swift; sourceTree = "<group>"; };
 		3897C43D2BBB840D00AF398B /* WordCopyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCopyView.swift; sourceTree = "<group>"; };
 		3897C43F2BBB924800AF398B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		389A760A2BD7549A009BC6F0 /* SaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveModel.swift; sourceTree = "<group>"; };
+		38E98A502BD6F29D00C8554C /* WordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,9 @@
 		3897C42A2BBB830100AF398B /* VocaVoca */ = {
 			isa = PBXGroup;
 			children = (
-				3897C4412BBB926700AF398B /* View */,
 				3897C42B2BBB830100AF398B /* VocaVocaApp.swift */,
+				38E34F462BD0CC9400D54830 /* Model */,
+				3897C4412BBB926700AF398B /* View */,
 				3897C42F2BBB830200AF398B /* Assets.xcassets */,
 				3897C4312BBB830200AF398B /* Preview Content */,
 			);
@@ -85,6 +90,15 @@
 				3897C42D2BBB830100AF398B /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		38E34F462BD0CC9400D54830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38E98A502BD6F29D00C8554C /* WordItem.swift */,
+				389A760A2BD7549A009BC6F0 /* SaveModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,8 @@
 			files = (
 				3897C42E2BBB830100AF398B /* ContentView.swift in Sources */,
 				3897C4402BBB924800AF398B /* HomeView.swift in Sources */,
+				389A760B2BD7549A009BC6F0 /* SaveModel.swift in Sources */,
+				38E98A512BD6F29D00C8554C /* WordItem.swift in Sources */,
 				3897C43A2BBB83E700AF398B /* WordSaveView.swift in Sources */,
 				3897C43C2BBB83FA00AF398B /* WordStudyView.swift in Sources */,
 				3897C42C2BBB830100AF398B /* VocaVocaApp.swift in Sources */,
@@ -303,7 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +348,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

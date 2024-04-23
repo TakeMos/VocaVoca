@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct WordSaveView: View {
+    
+    @Environment(\.modelContext) var context
+    
     @State private var tag: String = ""
     @State private var word: String = ""
     @State private var mean: String = ""
+    
+    @Query var words: [WordItem]
+    
+    
     var body: some View {
         ZStack {
             VStack {
@@ -50,5 +58,8 @@ struct WordSaveView: View {
             }
         }
         .background(.backgroundYellow)
+    }
+    func inputData() {
+        
     }
 }

@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     @State private var isPresented: Bool = false
+    @Environment(\.modelContext) private var context
+    
     
     var body: some View {
         NavigationStack {
