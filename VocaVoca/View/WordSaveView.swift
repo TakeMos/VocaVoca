@@ -10,13 +10,14 @@ import SwiftData
 
 struct WordSaveView: View {
     
-    @Environment(\.modelContext) var context
+    @Environment(\.modelContext) private var context
     
     @State private var tag: String = ""
     @State private var word: String = ""
     @State private var mean: String = ""
     
-    @Query var words: [WordItem]
+//    @Query var words: [WordItem]
+    var words: [WordItem]
     
     
     var body: some View {
@@ -45,7 +46,10 @@ struct WordSaveView: View {
                     .frame(width: 310, height: 95)
                     .textFieldStyle(.roundedBorder)
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    inputData()
+                    
+                }, label: {
                     Text("저장")
                         .font(.system(size: 32))
                         .frame(width: 310, height: 40)
@@ -59,7 +63,13 @@ struct WordSaveView: View {
         }
         .background(.backgroundYellow)
     }
+    
     func inputData() {
-        
+        let newWord = WordItem(word: word, mean: mean, tag: tag)
+        context.insert(newWord)
+        word = ""
+        mean = ""
+        tag = ""
     }
+    
 }

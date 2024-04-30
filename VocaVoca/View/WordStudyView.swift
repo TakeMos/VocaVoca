@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct WordStudyView: View {
+    var words: [WordItem]
+    
     var body: some View {
-        ZStack {
-            
+        VStack {
+            Text(words[0].word)
         }
     }
 }

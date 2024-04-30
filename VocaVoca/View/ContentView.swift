@@ -10,7 +10,8 @@ import SwiftData
 
 struct ContentView: View {
     @State private var isPresented: Bool = false
-    @Environment(\.modelContext) private var context
+    @Query private var words: [WordItem] = []
+//    @Environment(\.modelContext) private var context
     
     
     var body: some View {
@@ -22,7 +23,7 @@ struct ContentView: View {
                     Spacer()
                     
                     NavigationLink {
-                        WordSaveView()
+                        WordSaveView(words: words)
                     } label: {
                         Text("단어 저장하기")
                             .frame(width: 318, height: 94)
@@ -34,7 +35,7 @@ struct ContentView: View {
                     .shadow(radius: 3, y:5)
                     
                     NavigationLink {
-                        WordStudyView()
+                        WordStudyView(words: words)
                     } label: {
                         Text("단어 공부하기")
                             .frame(width: 318, height: 94)

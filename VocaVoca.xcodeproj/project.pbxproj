@@ -66,6 +66,7 @@
 				3897C42B2BBB830100AF398B /* VocaVocaApp.swift */,
 				38E34F462BD0CC9400D54830 /* Model */,
 				3897C4412BBB926700AF398B /* View */,
+				389A760C2BE175E6009BC6F0 /* Functions */,
 				3897C42F2BBB830200AF398B /* Assets.xcassets */,
 				3897C4312BBB830200AF398B /* Preview Content */,
 			);
@@ -90,6 +91,13 @@
 				3897C42D2BBB830100AF398B /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		389A760C2BE175E6009BC6F0 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		38E34F462BD0CC9400D54830 /* Model */ = {

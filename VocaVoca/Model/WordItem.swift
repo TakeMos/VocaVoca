@@ -10,14 +10,11 @@ import SwiftData
 
 @Model
 class WordItem {
-    @Attribute(.unique) let id: UUID
-    
     var word: String
     var mean: String
     var tag: String
     
-    init(id: UUID, word: String, mean: String, tag: String) {
-        self.id = id
+    init(word: String, mean: String, tag: String) {
         self.word = word
         self.mean = mean
         self.tag = tag
